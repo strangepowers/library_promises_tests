@@ -50,7 +50,7 @@ processStringToInt = str => {
 processInt = int => {
   return Promise.resolve(Math.atan(int))
 }
-
+/*
 processStringPromise('karstark')
   .then(function(res) {
     return processStringToInt(res)
@@ -62,11 +62,13 @@ processStringPromise('karstark')
   .then(function(res) {
     console.log('final res is', res)
   })
+*/
 
 // show how processStringPromise can't access it's internals directly
 
 let myBookShelf = []
 let booksIveRead = []
+let reviewedBooks = []
 
 const allBookTitle = () => {
   return new Promise((resolve, reject) => {
@@ -83,6 +85,10 @@ const bookByTitle = title => {
 
 const checkOutBook = book => {
   return new Promise((resolve, reject) => {
+    console.log("book checked out ", book.checked_out)
+    console.log("plain book ", book)
+    grazz = book
+    debugger
     if (book.checked_out === false) {
       myBookShelf.push(book)
       book.checked_out = true
@@ -101,7 +107,6 @@ const checkOutBook = book => {
 }
 
 const readBookNaive = title => {
-  console.log('title is ', title)
   let book = myBookShelf.filter(book => book.title === title)[0]
   book.reading = true
   let handle = setInterval(function() {
@@ -111,12 +116,11 @@ const readBookNaive = title => {
     clearInterval(handle)
     book.reading = false
     booksIveRead.push(title)
-  }, 10000)
+  }, 200)
 }
 
 const readBook = title => {
   return new Promise((resolve, reject) => {
-    console.log('title is ', title)
     let book = myBookShelf.filter(book => book.title === title)[0]
     book.reading = true
     let handle = setInterval(function() {
@@ -143,7 +147,7 @@ allBookTitle()
     return bookByTitle(title)
   })
   .then(function(book) {
-    console.log('book ', book)
+    //console.log('book ', book)
     return checkOutBook(book)
   })
   .then(function(title) {
@@ -160,6 +164,36 @@ allBookTitle()
 // test returnBook
 // test writeReview on book which returns rating and adds review to list of reviews, returns book title and rating
 // test process Review, which takes a title and rating and adds it to recommended list if its greater than 3
+
+const reviewBook = (title) => {
+  return new Promise((resolve, reject) => {
+    reviewedBooks.push(title)
+    let score = books_json.filter(x => x.title === title)[0].cover_id
+    resolve(score % 10)
+  })
+}
+
+const returnBook = (title) => {
+  return new Promise((resolve, reject) => {
+    reviewedBooks.push(title)
+    let book = books_json.filter((book) => book.title === title)[0]
+    book.checked_out = false
+    let indexOfBook = myBookShelf.findIndex(x => x.title === title)
+    myBookShelf.splice(indexOfBook, 1)    
+    resolve(true)
+  })
+}
+
+const willRead = (score, hasBeenReturned)  => {
+  return new Promise((resolve, reject) => {
+    if(score >= 7 && hasBeenReturned == true){
+      resolve(true)
+    } else {
+      resolve(false)
+    }
+  })
+}
+
 
 function randomTimeInverval() {
   return Math.floor(Math.random() * 850)
