@@ -1,0 +1,443 @@
+var books_json = {
+  subject_type: 'subject',
+  name: 'history',
+  key: '/subjects/history',
+  ebook_count: 188002,
+  works: [
+    {
+      printdisabled: true,
+      cover_id: 8234346,
+      has_fulltext: true,
+      edition_count: 820,
+      checked_out: false,
+      title: 'El ingenioso hidalgo Don Quijote de la Mancha',
+      public_scan: true,
+      cover_edition_key: 'OL24179015M',
+      lendinglibrary: false,
+      lending_edition: 'OL24226534M',
+      first_publish_year: null,
+      key: '/works/OL15346397W',
+      authors: [
+        {
+          name: 'Miguel de Cervantes Saavedra',
+          key: '/authors/OL6884519A'
+        }
+      ],
+      ia: 'donquixoteoflama00cerv_0',
+      lending_identifier: 'firstpartofdelig14cerv',
+      subject: ['In library', 'Translations into English', 'Ficción']
+    },
+    {
+      printdisabled: true,
+      cover_id: 8223114,
+      has_fulltext: true,
+      edition_count: 705,
+      checked_out: false,
+      title: "Alice's Adventures in Wonderland",
+      public_scan: true,
+      cover_edition_key: 'OL13442629M',
+      lendinglibrary: false,
+      lending_edition: 'OL26151713M',
+      first_publish_year: null,
+      key: '/works/OL13101191W',
+      authors: [
+        {
+          name: 'Lewis Carroll',
+          key: '/authors/OL22098A'
+        }
+      ],
+      ia: 'alicesabenteueri00carr',
+      lending_identifier: 'isbn_9780545272131',
+      subject: ['English Fantasy fiction', 'Mad Hatter', 'Children']
+    },
+    {
+      printdisabled: true,
+      cover_id: 8157718,
+      has_fulltext: true,
+      edition_count: 689,
+      checked_out: false,
+      title: 'Adventures of Huckleberry Finn',
+      public_scan: true,
+      cover_edition_key: 'OL7062714M',
+      lendinglibrary: false,
+      lending_edition: 'OL26440875M',
+      first_publish_year: null,
+      key: '/works/OL53908W',
+      authors: [
+        {
+          name: 'Mark Twain',
+          key: '/authors/OL18319A'
+        }
+      ],
+      ia: 'huckleberry_mfs_librivox',
+      lending_identifier: 'isbn_0671481525',
+      subject: ['runaway teenagers', 'social life and customs']
+    },
+    {
+      printdisabled: true,
+      cover_id: 8222089,
+      has_fulltext: true,
+      edition_count: 563,
+      checked_out: false,
+      title: 'Macbeth',
+      public_scan: true,
+      cover_edition_key: 'OL7101394M',
+      lendinglibrary: false,
+      lending_edition: 'OL6137670M',
+      first_publish_year: null,
+      key: '/works/OL15203980W',
+      authors: [
+        {
+          name: 'William Shakespeare',
+          key: '/authors/OL9388A'
+        }
+      ],
+      ia: 'macbethtragedy00shakrich',
+      lending_identifier: 'macbeth00shak_84v',
+      subject: ['In library', 'Juvenile drama']
+    },
+    {
+      printdisabled: true,
+      cover_id: 5916663,
+      has_fulltext: true,
+      edition_count: 557,
+      checked_out: false,
+      title: 'Ab urbe condita',
+      public_scan: true,
+      cover_edition_key: 'OL7165593M',
+      lendinglibrary: false,
+      lending_edition: 'OL351913M',
+      first_publish_year: null,
+      key: '/works/OL1261147W',
+      authors: [
+        {
+          name: 'Titus Livius',
+          key: '/authors/OL127331A'
+        }
+      ],
+      ia: 'livywithenglisht02livyuoft',
+      lending_identifier: 'riseofromebookso00livy',
+      subject: [
+        'Historiography',
+        'Punic War, 2nd, 218-201 B.C.',
+        'Bibliography',
+        'Roman law',
+        'Readers',
+        'George Baker',
+        'Accessible book',
+        'Latin language',
+        'OverDrive',
+        'Patricians (Rome)',
+        'Plebs (Rome)',
+        'Politics and government',
+        'Problems, exercises',
+        'Antiquities',
+        'Campaigns',
+        'Punic War, 2d, 218-201 B.C.',
+        'Republic, 510-265 B.C.',
+        'Roman law.',
+        'Rome',
+        'History',
+        'Punic War, 2d',
+        'Histoire',
+        'Crossing of the Alps, 218 B.C.',
+        'Early works to 1800',
+        'Nonfiction',
+        'Protected DAISY',
+        'Biography'
+      ]
+    },
+    {
+      printdisabled: true,
+      cover_id: 6113465,
+      has_fulltext: true,
+      edition_count: 541,
+      checked_out: false,
+      title: 'Robinson Crusoe',
+      public_scan: true,
+      cover_edition_key: 'OL23361148M',
+      lendinglibrary: false,
+      lending_edition: 'OL24218535M',
+      first_publish_year: null,
+      key: '/works/OL45310W',
+      authors: [
+        {
+          name: 'Daniel Defoe',
+          key: '/authors/OL18283A'
+        }
+      ],
+      ia: 'lifestrangesurpr00defouoft',
+      lending_identifier: 'robinsoncrus00defo',
+      subject: ['Kulturkontakt', 'Pirates in fiction', 'Islands in fiction']
+    },
+    {
+      printdisabled: false,
+      cover_id: 5720552,
+      has_fulltext: true,
+      edition_count: 540,
+      checked_out: false,
+      title: 'Book of common prayer',
+      public_scan: true,
+      cover_edition_key: 'OL7170026M',
+      lendinglibrary: false,
+      lending_edition: '',
+      first_publish_year: null,
+      key: '/works/OL769120W',
+      authors: [
+        {
+          name: 'Church of England',
+          key: '/authors/OL63387A'
+        }
+      ],
+      ia: 'firstprayerbooko00churiala',
+      lending_identifier: '',
+      subject: ['Doctrines']
+    },
+    {
+      printdisabled: true,
+      cover_id: 5601773,
+      has_fulltext: true,
+      edition_count: 523,
+      checked_out: false,
+      title: 'Divina commedia',
+      public_scan: true,
+      cover_edition_key: 'OL7079250M',
+      lendinglibrary: false,
+      lending_edition: 'OL6283939M',
+      first_publish_year: null,
+      key: '/works/OL15207978W',
+      authors: [
+        {
+          name: 'Dante Alighieri',
+          key: '/authors/OL5988928A'
+        }
+      ],
+      ia: 'lacommedia0102dantuoft',
+      lending_identifier: 'divinecomedyofdant00dant',
+      subject: ['Venice', 'POESIAS EPICAS ITALIANAS']
+    },
+    {
+      printdisabled: true,
+      cover_id: 8235461,
+      has_fulltext: true,
+      edition_count: 440,
+      checked_out: false,
+      title: 'The Aeneid',
+      public_scan: true,
+      cover_edition_key: 'OL23269423M',
+      lendinglibrary: false,
+      lending_edition: 'OL5823848M',
+      first_publish_year: null,
+      key: '/works/OL16280231W',
+      authors: [
+        {
+          name: 'Publius Vergilius Maro',
+          key: '/authors/OL28294A'
+        }
+      ],
+      ia: 'aeneidosliberxi00virguoft',
+      lending_identifier: 'isbn_9780451622778',
+      subject: [
+        'In library',
+        'Dido (Legendary character)',
+        'Legends',
+        'Readers',
+        'Epic poetry',
+        'Poetry',
+        'Latin language',
+        'Illustrations',
+        'Translations into French',
+        'Phaedra (Greek mythology)',
+        'Problems, exercises',
+        'Translations into Italian',
+        'Aeneas (Legendary character) in literature',
+        'Trojan War',
+        'Translations into German',
+        'Accessible book',
+        'Translations into Hungarian',
+        'Open Library Staff Picks',
+        'Translations into Spanish',
+        'Aeneas (Legendary character)',
+        'Drama',
+        'Rome',
+        'Greek literature',
+        'Concordances',
+        'Italian Dialect poetry',
+        'History',
+        'Translations into Russian',
+        'Turnus (Legendary character)',
+        'Translations into Polish',
+        'Translations into Arabic',
+        'Translations into English',
+        'Translations into Slovak',
+        'Examinations, questions',
+        'Translations into Hebrew',
+        'Translations into Scots',
+        'Protected DAISY',
+        'Latin Epic poetry',
+        'open_syllabus_project'
+      ]
+    },
+    {
+      printdisabled: true,
+      cover_id: 5579108,
+      has_fulltext: true,
+      edition_count: 411,
+      checked_out: false,
+      title: 'On the Nature of the Universe',
+      public_scan: true,
+      cover_edition_key: 'OL7052449M',
+      lendinglibrary: false,
+      lending_edition: 'OL6503540M',
+      first_publish_year: null,
+      key: '/works/OL1548597W',
+      authors: [
+        {
+          name: 'Titus Lucretius Carus',
+          key: '/authors/OL164746A'
+        }
+      ],
+      ia: 'dererumnaturalib00lucruoft',
+      lending_identifier: 'onnatureofthings1946lucr',
+      subject: [
+        'In library',
+        'Translations into Italian',
+        'Accessible book',
+        'Poetry',
+        'Classical literature',
+        'Translations into French',
+        'Lending library',
+        'Atomic theory',
+        'Latin poetry',
+        'Philosophy',
+        'Criticism and interpretation',
+        'Nature',
+        'Long Now Manual for Civilization',
+        'Kommentar',
+        'Ancient Philosophy',
+        'Didactic poetry, Latin',
+        'Translations into Spanish',
+        'Microbiology',
+        'Greek literature',
+        'Physics',
+        'History',
+        'Latin Didactic poetry',
+        'Translations into English',
+        'Early works to 1800',
+        'Protected DAISY',
+        'Philosophy of nature'
+      ]
+    },
+    {
+      printdisabled: true,
+      cover_id: 8315848,
+      has_fulltext: true,
+      edition_count: 406,
+      checked_out: false,
+      title: 'Madame Bovary',
+      public_scan: true,
+      cover_edition_key: 'OL24441444M',
+      lendinglibrary: false,
+      lending_edition: 'OL7818044M',
+      first_publish_year: null,
+      key: '/works/OL893959W',
+      authors: [
+        {
+          name: 'Gustave Flaubert',
+          key: '/authors/OL79039A'
+        }
+      ],
+      ia: 'madamebovary14155gut',
+      lending_identifier: 'madamebovary00bant',
+      subject: [
+        'In library',
+        'Suicide',
+        'Husband and wife',
+        'Critique et interprétation',
+        'Accessible book',
+        'Technique',
+        'Fiction',
+        'literary fiction',
+        'OverDrive',
+        'NOVELAS FRANCESAS',
+        'Suicide victims',
+        'Physicians',
+        'Manners and customs in fiction',
+        'Fiction in Spanish',
+        'Translations from French',
+        'Country life',
+        'Large type books',
+        'Classic Literature',
+        'Spouses',
+        'Women',
+        "Physicians' spouses",
+        'Fiction in English',
+        'open_syllabus_project',
+        'Middle class',
+        'Manners and customs',
+        'French fiction',
+        'History',
+        'Social life and customs',
+        'Married women',
+        'Intellectual life',
+        'Translations into English',
+        'French literature',
+        'Adultery',
+        'Protected DAISY',
+        'Charles Bovary (Fictitious character)',
+        'Internet Archive Wishlist'
+      ]
+    },
+    {
+      printdisabled: true,
+      cover_id: 8222164,
+      has_fulltext: true,
+      edition_count: 355,
+      checked_out: false,
+      title: 'Merchant of Venice',
+      public_scan: true,
+      cover_edition_key: 'OL24733717M',
+      lendinglibrary: false,
+      lending_edition: 'OL23770819M',
+      first_publish_year: null,
+      key: '/works/OL362701W',
+      authors: [
+        {
+          name: 'John Martin Russell',
+          key: '/authors/OL5390486A'
+        }
+      ],
+      ia: 'merchantofveni00shakuoft',
+      lending_identifier: 'yaleofshakespear00shak',
+      subject: [
+        'Moneylenders',
+        'In library',
+        'Plays',
+        'Accessible book',
+        'Fiction',
+        'Promptbooks',
+        'Outlines, syllabi',
+        'Problems, exercises',
+        'English literature',
+        'Criticism and interpretation',
+        'Study and teaching',
+        'Shylock (Fictitious character)',
+        'Bibliography',
+        'English Young adult drama',
+        'Drama',
+        'Study guides',
+        'History',
+        'Examinations',
+        'Quartos',
+        'Jews',
+        'Jews in literature',
+        'History and criticism',
+        'Sources',
+        'OverDrive',
+        'Protected DAISY',
+        'Juvenile drama'
+      ]
+    }
+  ],
+  work_count: 188002
+}.works
