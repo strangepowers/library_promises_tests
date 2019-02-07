@@ -18,7 +18,7 @@ describe('#checkOutBook', function() {
       })
       .catch(function(err) {
         console.log('ERR :', err)
-        done()
+        done(new Error(err))
       })
   })
 })
@@ -36,7 +36,7 @@ describe('#readBook', function() {
       })
       .catch(function(err) {
         console.log('ERR :', err)
-        done()
+        done(new Error(err))
       })
   })
 
@@ -56,7 +56,7 @@ describe('#readBook', function() {
       })
       .catch(function(err) {
         console.log('ERR :', err)
-        done()
+        done(new Error(err))
       })
   })
 })
@@ -80,7 +80,7 @@ describe('#reviewBook', function() {
       })
       .catch(function(err) {
         console.log('ERR :', err)
-        done()
+        done(new Error(err))
       })
   })
 })
@@ -106,7 +106,7 @@ describe('#returnBook', function() {
       })
       .catch(function(err) {
         console.log('ERR :', err)
-        done()
+        done(new Error(err))
       })
   })
 })
@@ -133,7 +133,7 @@ describe('#willRead', function() {
       })
       .catch(function(err) {
         console.log('ERR :', err)
-        done()
+        done(new Error(err))
       })
   })
 
@@ -157,7 +157,7 @@ describe('#willRead', function() {
       })
       .catch(function(err) {
         console.log('ERR :', err)
-        done()
+        done(new Error(err))
       })
   })
 
@@ -182,7 +182,7 @@ describe('#willRead', function() {
       })
       .catch(function(err) {
         console.log('ERR :', err)
-        done()
+        done(new Error(err))
       })
   })
 })
