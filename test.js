@@ -8,6 +8,7 @@ describe('#checkOutBook', function(){
       return checkOutBook(res) 
     }).then(function(res){
       chai.assert.notEqual(myBookShelf.findIndex(x => x.title === "Macbeth", -1))
+      chai.assert.equal("Macbeth", res)
       // reset myBookShelf to empty array after test has finished
       myBookShelf = []
       done()
