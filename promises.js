@@ -17,3 +17,28 @@ const bookByTitle = title => {
   })
 }
 
+const checkOutBook = book => {
+  return new Promise((resolve, reject) => {
+  })
+}
+
+
+const readBook = title => {
+  return new Promise((resolve, reject) => {
+  })
+}
+
+const reviewBook = (title) => {
+  return new Promise((resolve, reject) => {
+  })
+}
+
+const returnBook = (title) => {
+  return new Promise((resolve, reject) => {
+  })
+}
+
+const willRead = (score, hasBeenReturned)  => {
+  return new Promise((resolve, reject) => {
+  })
+}
