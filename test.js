@@ -14,6 +14,8 @@ describe('#checkOutBook', function() {
         chai.assert.equal('Macbeth', res)
         // reset myBookShelf to empty array after test has finished
         myBookShelf = []
+        book = books_json.filter((book) => book.title === 'Macbeth')[0]
+        book.checked_out = false
         done()
       })
       .catch(function(err) {
@@ -48,6 +50,7 @@ describe('#readBook', function() {
       })
       .then(function(res) {
         console.log('my bookshelf i99 ', myBookShelf)
+        console.log("RES IS ", res)
         return readBook(res)
       })
       .then(function(res) {
